@@ -9,13 +9,26 @@
 
     <!--BEGIN SEARCH AREA-->
     <div class="panel panel-primary">
-        <div class="panel-heading"></div>
-        <div class="panel-body"></div>
-        <div class="panel-footer"></div>
+        <div class="panel-heading">
+            <h1 class="panel-tittle">Busca</h1>
+        </div>
+        <div class="panel-body">
+            <div class=" form-group">
+                @Html.Label("Nome")
+                @Html.TextBox("Digite o nome", "", new { @class="form-control"})
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button id="btnSearch" class="btn btn-sm btn-primary">Busca</button>
+            <button id="btnReset" class="btn btn-sm btn-primary">Resete</button>
+        </div>
     </div>
     <!--END SEARCH AREA-->
 
     <!--BEGIN LIST AREA-->
+    <table>
+
+    </table>
     <!--END LIST AREA-->
 }
 
